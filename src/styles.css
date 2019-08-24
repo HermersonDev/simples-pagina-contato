@@ -19,6 +19,24 @@ a {
 	text-decoration: none;
 }
 
+button {
+	background: transparent;
+	border-radius: 25px;
+	border: 2px solid white;
+	color: white;
+	cursor:	pointer;
+	font-size: 20px;
+	font-weight: 600;
+	outline: none;
+	padding: 10px 60px;
+	transition: all .8s;
+}
+
+button:hover {
+	background-color: white;
+	color: black;
+}
+
 #wrap {
 	overflow-x: hidden;
 	width: calc(100vw);
@@ -31,9 +49,10 @@ main.conteudo {
 	background-size: 100% 100%;
 	border-top: 1px solid rgba(0, 0, 0, 1);
 	height: 100vh;
-	margin-left: -400px;
+	margin-left: 0;
 	object-fit: cover;
 	width: 100vw;
+	transition: margin-left 1.2s;
 }
 
 .conteudo h2.titulo {
@@ -64,26 +83,10 @@ h2.titulo a:hover {
 
 .descricao p {
 	color: white;
-	font-size: 20px;
+	font-size: 1.5vw;
 }
 
-button {
-	background: transparent;
-	border-radius: 25px;
-	border: 2px solid white;
-	color: white;
-	cursor:	pointer;
-	font-size: 20px;
-	font-weight: 600;
-	outline: none;
-	padding: 10px 60px;
-	transition: all .8s;
-}
 
-button:hover {
-	background-color: white;
-	color: black;
-}
 
 .descricao button {
 	bottom: 15%;
@@ -98,21 +101,26 @@ section.contato {
 	height: 100vh;
 	padding: 10px 50px;
 	position: absolute;
-	right: 0px;
+	right: -25vw;
 	top: 0;
-	width: 400px;
+	width: 25vw;
+	transition: right 1.2s;
 }
 
 .contato span {
 	cursor: pointer;
-	padding: 5px;
+	padding: 0 5px;
 	position: absolute;
 	right: 20px;
 	top: 20px;
 }
 
+.contato span:hover {
+	opacity: 0.8;
+}
+
 .contato form {
-	margin: 50px 0 100px 0;
+	margin: 100px 0;
 }
 
 .contato form label,
@@ -132,6 +140,7 @@ section.contato {
 	border: none;
 	margin-bottom: 20px;
 	outline: none;
+	padding: 10px;
 }
 
 .contato form input {
@@ -163,14 +172,31 @@ section.contato {
 
 .contato ul {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	list-style-type: none;
 	margin-top: 50px;
+	overflow-y: hidden;
 }
 
 .contato ul li {
-	border: 1px solid purple;
-	margin: 5px 30px;
+	margin: 10px 20px;
+}
+
+.contato i {
+	color: rgba(255, 255, 255, 1);
+}
+
+.contato i:hover {
+	color: rgba(255, 255, 255, .8);
+}
+
+small#rodape {
+	position: absolute;
+	bottom: 20px;
+	width: 75%;
+	color: lightgrey;
+	text-align: center;
 }
 
 /*ANIMAÇÕES*/

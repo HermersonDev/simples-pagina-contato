@@ -3,13 +3,15 @@
 <head lang="pt-BR">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./src/styles.css">
+	<script src="https://kit.fontawesome.com/a7f1e7c573.js"></script>
 	<title>Simples Página de Contato</title>
 </head>
 <body>
 	<div id="wrap">
 
-		<main class="conteudo">
+		<main id="conteudo" class="conteudo">
 			<h2 class="titulo">
 				<a href="#">
 					Fotografo
@@ -17,14 +19,16 @@
 			</h2>
 			<div class="descricao">
 				<p>
-					Mussum Ipsum, <strong>cacilds</strong> vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet.
+					Esta é uma simples página para <strong>contato</strong>. Aqui são apresentadas, de forma visual, algumas funcionalidades para facilitar a comunicação. Por favor clique no botão logo abaixo.
 				</p>
-				<button>Contato</button>
+				<button id="btn-contato">Contato</button>
 			</div>
 		</main>
 
-		<section class="contato">
-			<span>X</span>
+		<section id="contato" class="contato">
+			<span id="close">
+				<img src="./src/imgs/close.png" style="height: auto; width: 30px;">
+			</span>
 			<form>
 				<label>Email</label>
 				<input type="text" name="email">
@@ -36,25 +40,26 @@
 			<ul>
 				<li>
 					<a href="">
-						<i>A</i>
+						<i class="fab fa-instagram fa-2x"></i>
 					</a>
 				</li>
 				<li>
 					<a href="">
-						<i>A</i>
+						<i class="fab fa-twitter fa-2x"></i>
 					</a>
 				</li>
 				<li>
 					<a href="">
-						<i>A</i>
+						<i class="fab fa-facebook-f fa-2x"></i>
 					</a>
 				</li>
 				<li>
 					<a href="">
-						<i>A</i>
+						<i class="fab fa-youtube fa-2x"></i>
 					</a>
 				</li>
 			</ul>
+			<small id="rodape">@hdev_</small>
 		</section>
 		
 	</div>
