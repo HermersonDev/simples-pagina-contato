@@ -6,7 +6,7 @@
 
 ### Mocks
 
-<img src="./src/imgs/mock-contato.jpg" height="200px" width="200px">
+<img src="./src/imgs/mock-contato.jpg" width="300px">
 
-<img src="./src/imgs/mock-contato-2.jpg" height="200px" width="200px">
+<img src="./src/imgs/mock-contato-2.jpg" width="300px">
 
